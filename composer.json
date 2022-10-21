@@ -1,0 +1,23 @@
+{
+    "name": "b-thanh/first-package",
+    "description": "Test uploading ldap connection",
+    "autoload": {
+        "psr-4": {
+            "BThanh\\FirstPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "b-thanh",
+            "email": "b-thanh@plott.co.jp"
+        }
+    ],
+    "require": {
+        "directorytree/ldaprecord-laravel": "^2.6"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --provider=\"BThanh\\FirstPackage\\FirstPackageServiceProvider\""
+        ]
+    }
+}
