@@ -10,6 +10,7 @@ class LdapCustom
 
     public static function connectLdap($username, $password)
     {
+        $username = self::formatLoginCode($username);
         return Container::getConnection('AD')->connect($username, $password);
     }
 
