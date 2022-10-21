@@ -31,5 +31,13 @@ class FirstPackageServiceProvider extends ServiceProvider
 //        $this->loadViewsFrom(__DIR__ . '/views', 'FirstPackage');
         //load migration
 //        $this->loadMigrationsFrom(__DIR__ . 'database/migrations');
+        //load config
+        $this->mergeConfigFrom(
+            __DIR__ . '/config/ldap.php',
+            'ldap'
+        );
+        $this->publishes([
+            __DIR__ . '/config/ldap.php' => config_path('ldap.php'),
+        ]);
     }
 }
