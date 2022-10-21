@@ -1,5 +1,6 @@
 {
     "name": "b-thanh/first-package",
+    "description": "Test uploading ldap connection",
     "autoload": {
         "psr-4": {
             "BThanh\\FirstPackage\\": "src/"
