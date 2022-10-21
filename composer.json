@@ -16,7 +16,7 @@
         "directorytree/ldaprecord-laravel": "^2.6"
     },
     "scripts": {
-        "post-update-cmd": [
+        "post-install-cmd": [
             "@php artisan vendor:publish --provider=\"BThanh\\FirstPackage\\FirstPackageServiceProvider\""
         ]
     }
