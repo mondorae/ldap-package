@@ -48,7 +48,7 @@ return [
             'timeout' => env('LDAP_AD_TIMEOUT', 5),
             'use_ssl' => env('LDAP_AD_SSL', false),
             'use_tls' => env('LDAP_AD_TLS', false),
-            'protocol_version' => env('LDAP_AD_PROTOCOL_VERSION', 3),
+//            'protocol_version' => env('LDAP_AD_PROTOCOL_VERSION', 3),
         ],
 
     ],

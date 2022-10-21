@@ -2,7 +2,7 @@
 
 namespace BThanh\FirstPackage;
 
-use App\Ldap\LdapUsers;
+use BThanh\FirstPackage\Ldap\LdapUsers;
 use LdapRecord\Container;
 
 class LdapCustom
